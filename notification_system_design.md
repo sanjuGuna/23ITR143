@@ -71,6 +71,10 @@ Response:
     QUERY
     db.findOne({"ID":1}) // simple query .FOR the api http://localhost:3000/notifications/:id
 
-
+## STAGE 3 
+    This query is accurate
+    whenever the rows grow in database , fetch/reteriving the data is slow.
+    It can be improved by using index, because every row is indexed based on the studentID. reteriving using studentID is faster;
+    QUERY: select * from notification where (DATE()-Timesent)<=7;
 
 
