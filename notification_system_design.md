@@ -77,4 +77,9 @@ Response:
     It can be improved by using index, because every row is indexed based on the studentID. reteriving using studentID is faster;
     QUERY: select * from notification where (DATE()-Timesent)<=7;
 
+## STAGE 4
+    Solution is cacheing the data that the user is fetched.
+    by this we can avoid recomputation of each request, the cached data is directly sent to the user.
+    This can improve user exprience.
+
 
