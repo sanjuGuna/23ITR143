@@ -81,5 +81,11 @@ Response:
     Solution is cacheing the data that the user is fetched.
     by this we can avoid recomputation of each request, the cached data is directly sent to the user.
     This can improve user exprience.
+## STAGE 5
+    sending email to the users at same time can fail to send to the all users.
+    By implememting asynchrnous way, that work independently .. so that we can send the data fast.
+    calling email api can make system slow,
+    we can save to the db first, then calling email api would make system fast . we can mail to the student at the same         time instead of sending to each user.
+    
 
 
