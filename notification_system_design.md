@@ -47,3 +47,30 @@ Response:
         "Message":"mid-sem",
         "Time Stamp": time
     }
+
+## STAGE 2
+    Based on the api's i would use mongo db.
+    because using of mongo db is flexible and can store semi or unstructured data it. Has flexible schema
+
+    SCHEMA
+   const notification= mongoose.schema({
+            "notifications":[
+                {
+                    "ID":1,
+                    "Type":"Result",
+                    "Message":"mid-sem",
+                    "Timestamp":"2026-05-18 17:51:30"
+                }
+            ]
+    });
+
+    PROBLEM IN INCRESING DATA SIZE:
+        In mongo db each document size 16Mb, we cant store more than that
+        if size increses fetching/modifing will be slow.
+    
+    QUERY
+    db.findOne({"ID":1}) // simple query .FOR the api http://localhost:3000/notifications/:id
+
+
+
+
